@@ -148,7 +148,7 @@ img {
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
     padding: 2.5rem 0;
     width: 90%;
-    top: 3rem;
+    top: -100%;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -173,6 +173,10 @@ img {
 }
 
 /* Show menu */
+.show-menu {
+  top: calc(var(--header-height) + 1rem);
+}
+
 /* Change background header */
 /*=============== HOME ===============*/
 /*=============== BUTTONS ===============*/
