@@ -131,6 +131,7 @@ img {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
+  background-color: var(--container-color);
   transition: 0.5s;
 }
 
@@ -209,6 +210,13 @@ img {
 }
 
 /*=============== ABOUT ===============*/
+.about__container {
+  gap: 2.5rem;
+}
+.about__data {
+  text-align: center;
+}
+
 /*=============== SECURITY ===============*/
 /*=============== SERVICES ===============*/
 /*=============== APP ===============*/
