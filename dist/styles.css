@@ -278,6 +278,21 @@ img {
 }
 
 /*=============== CONTACT ===============*/
+.contact__container {
+  padding-bottom: 3rem;
+}
+.contact__description {
+  text-align: center;
+}
+.contact__data {
+  row-gap: 1rem;
+}
+.contact__address {
+  font-size: var(--small-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
+}
+
 /*=============== FOOTER ===============*/
 /*=============== SCROLL UP ===============*/
 /* Show Scroll Up*/
