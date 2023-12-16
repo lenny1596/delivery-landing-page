@@ -66,6 +66,7 @@ body {
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--text-color);
+  transition: 0.1s;
 }
 
 h1, h2, h3 {
@@ -89,7 +90,29 @@ img {
 
 /*=============== THEME ===============*/
 /*========== Variables Dark theme ==========*/
+body.dark-theme {
+  --first-color-light: hsl(var(--hue), var(--sat), 75%);
+  --title-color: hsl(var(--hue), 4%, 95%);
+  --text-color: hsl(var(--hue), 4%, 80%);
+  --body-color: hsl(var(--hue), 8%, 13%);
+  --container-color: hsl(var(--hue), 8%, 16%);
+}
+
+.dark-theme .footer {
+  background-color: var(--container-color);
+}
+
 /*========== Button Dark/Light ==========*/
+.theme-button {
+  position: fixed;
+  right: 3.5rem;
+  font-size: 1.5rem;
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
+  z-index: var(--z-fixed);
+  cursor: pointer;
+}
+
 /*=============== REUSABLE CSS CLASSES ===============*/
 .section {
   padding: 4.5rem 0 1rem;
@@ -346,7 +369,6 @@ img {
 .scrollup__icon {
   position: fixed;
   right: 2rem;
-  bottom: -20%;
   color: var(--first-color);
   font-size: 2.5rem;
   display: inline-flex;

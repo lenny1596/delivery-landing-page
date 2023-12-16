@@ -65,3 +65,41 @@ function scrollUp() {
   }
 }
 window.addEventListener("scroll", scrollUp);
+
+/* =============== DARK / LIGHT THEME ===============*/
+
+const themeButton = document.getElementById("theme-change");
+const darkTheme = "dark-theme";
+const iconTheme = "bx-toggle-right";
+
+// Get the selected theme and icon from local storage
+const selectedTheme = localStorage.getItem("selected-theme");
+const selectedIcon = localStorage.getItem("selected-icon");
+
+// Function to get the current theme based on the body class
+const getCurrentTheme = () =>
+  document.body.classList.contains(darkTheme) ? "dark" : "light";
+
+// Function to get the current icon based on the button class
+const getCurrentIcon = () =>
+  themeButton.classList.contains(iconTheme)
+    ? "bx-toggle-left"
+    : "bx-toggle-right";
+
+// Set the initial theme and icon based on the selected values from local storage
+if (selectedTheme) {
+  document.body.classList[selectedTheme === "dark" ? "add" : "remove"](
+    darkTheme
+  );
+  themeButton.classList[selectedIcon === "bx-toggle-left" ? "add" : "remove"](
+    iconTheme
+  );
+}
+
+// Add event listener to toggle the theme and icon on button click
+themeButton.addEventListener("click", () => {
+  document.body.classList.toggle(darkTheme);
+  themeButton.classList.toggle(iconTheme);
+  localStorage.setItem("selected-theme", getCurrentTheme());
+  localStorage.setItem("selected-icon", getCurrentIcon());
+});
