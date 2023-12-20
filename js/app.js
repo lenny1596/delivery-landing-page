@@ -58,7 +58,7 @@ window.addEventListener("scroll", scrollHeader);
 /* =============== SHOW SCROLL UP ===============*/
 function scrollUp() {
   const scrollUp = document.querySelector(".scrollup__icon");
-  if (window.scrollY >= 1000) {
+  if (window.scrollY >= 500) {
     scrollUp.classList.add("show-scroll");
   } else {
     scrollUp.classList.remove("show-scroll");

@@ -1,0 +1,161 @@
+/*=============== MEDIA QUERIES ===============*/
+/* For small devices */
+@media screen and (max-width: 22.5em) {
+  .svg__img {
+    width: 100%;
+  }
+
+  .section {
+    padding: 3.5rem 0 1rem;
+  }
+
+  .services__img {
+    width: 100%;
+  }
+
+  .app__buttons {
+    grid-template-columns: max-content;
+  }
+}
+
+/* For medium devices */
+@media screen and (min-width: 35em) {
+  .svg__img {
+    width: 100%;
+  }
+
+  .section__title-center {
+    text-align: initial;
+  }
+
+  .home__container,
+  .about__container,
+  .security__container,
+  .app__container,
+  .contact__container,
+  .footer__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .services__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .home__container,
+  .about__container,
+  .security__container,
+  .app__container,
+  .contact__container {
+    align-items: center;
+  }
+
+  .home__img {
+    order: 1;
+  }
+
+  .about__description,
+  .security__description,
+  .app__description,
+  .contact__description {
+    text-align: initial;
+  }
+
+  .app__buttons {
+    justify-content: left;
+  }
+
+  .about__img,
+  .app__img {
+    order: -1;
+  }
+
+  .contact__address {
+    display: grid;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  .section {
+    padding: 6rem 0 2rem;
+  }
+
+  .nav {
+    height: calc(var(--header-height) + 1rem);
+
+    &__list {
+      flex-direction: row;
+      column-gap: 2.5rem;
+    }
+
+    &__toggle {
+      display: none;
+    }
+  }
+
+  .theme-button {
+    position: initial;
+    font-size: 1.8rem;
+  }
+
+  .home__container {
+    padding: 3rem 0 1.5rem;
+  }
+}
+
+/* For large devices */
+@media screen and (min-width: 60.5em) {
+  .button__header {
+    display: block;
+  }
+
+  .home__img {
+    width: 500px;
+  }
+
+  .about__container,
+  .security__container,
+  .app__container,
+  .contact__container {
+    column-gap: 6rem;
+  }
+
+  .contact__container {
+    grid-template-columns: 3fr 1.5fr 1.25fr;
+  }
+
+  .footer {
+    &__container {
+      grid-template-columns: repeat(5, 1fr);
+    }
+
+    &__social {
+      align-items: flex-start;
+
+      &-link {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 64em) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .home {
+    &__img {
+      width: 550px;
+    }
+
+    &__description {
+      padding-right: 5rem;
+    }
+  }
+
+  .show-scroll {
+    bottom: 2rem;
+  }
+}

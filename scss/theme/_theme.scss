@@ -9,16 +9,16 @@ body.dark-theme {
 }
 
 .dark-theme .footer {
-    background-color: var(--container-color);
+  background-color: var(--container-color);
 }
 
 /*========== Button Dark/Light ==========*/
 .theme-button {
-  position: fixed;
-  right: 3.5rem;
+  position: absolute;
+  right: 1.5rem;
+  top: 2.2rem;
   font-size: 1.5rem;
   font-weight: var(--font-semi-bold);
   color: var(--title-color);
-  z-index: var(--z-fixed);
   cursor: pointer;
 }

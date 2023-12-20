@@ -6,8 +6,8 @@
   --header-height: 3rem;
 
   /*========== Colors ==========*/
-  --hue: 45; //  Yellow: 45   | Red: 4 | Orange: 18  | Green: 118
-  --sat: 98%; // Yellow: 98% | Red: 90% | Orange: 85% | Green: 50%
+  --hue: 18; //  Yellow: 45   | Red: 4 | Orange: 18  | Green: 118
+  --sat: 85%; // Yellow: 98% | Red: 90% | Orange: 85% | Green: 50%
   --first-color: hsl(var(--hue), var(--sat), 60%);
   --first-color-light: hsl(var(--hue), var(--sat), 85%);
   --first-color-lighten: hsl(var(--hue), var(--sat), 80%);
@@ -31,7 +31,7 @@
   --smaller-font-size: 0.75rem;
 
   // Responsive typography
-  @media screen and (min-width: 968px) {
+  @media screen and (min-width: 60.5em) {
     --biggest-font-size: 3rem;
     --h2-font-size: 1.75rem;
     --h3-font-size: 1.25rem;
